@@ -327,7 +327,7 @@
             //    );
             //}
             #endregion
-           
+
             #region Exercise05
 
             //// Create Queue
@@ -389,8 +389,68 @@
             //{
             //    Console.WriteLine("Queue is empty.");
             //}
-        
-   
+
+
+            #endregion
+
+            #region Exercise06
+           //// Create Stack
+       
+           //Stack<string> history =
+           //    new Stack<string>();
+       
+       
+           //// Push 5 URLs
+       
+           //history.Push("google.com");
+           //history.Push("github.com");
+           //history.Push("stackoverflow.com");
+           //history.Push("youtube.com");
+           //history.Push("claude.ai");
+       
+       
+           //// 2. Peek current page
+       
+           //Console.WriteLine(
+           //    $"Current Page: {history.Peek()}"
+           //);
+       
+       
+           //// 3. Press Back 3 times
+       
+           //Console.WriteLine("\nGoing Back:");
+       
+           //for (int i = 0; i < 3; i++)
+           //{
+           //    string page = history.Pop();
+       
+           //    Console.WriteLine($"Leaving: {page}");
+           //}
+       
+       
+           //// 4. Current page after going back
+       
+           //Console.WriteLine(
+           //    $"\nCurrent Page: {history.Peek()}"
+           //);
+       
+       
+           //// 5. TryPop on empty Stack
+       
+           //history.Clear();
+       
+           //bool success =
+           //    history.TryPop(out string result);
+       
+           //Console.WriteLine(
+           //    $"\nTryPop succeeded: {success}"
+           //);
+       
+           //if (!success)
+           //{
+           //    Console.WriteLine("Stack is empty.");
+           //}
+       
             #endregion
 
 }
