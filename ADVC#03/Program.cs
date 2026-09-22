@@ -236,96 +236,161 @@
             #region Exercise04
 
             // 1. Create HashSet with case-insensitive comparer
-         
+
             //HashSet<string> emails =
             //    new HashSet<string>(
             //        StringComparer.OrdinalIgnoreCase
             //    );
-         
-         
+
+
             //// 2. Add emails
-         
+
             //emails.Add("ahmed@test.com");
             //emails.Add("AHMED@test.com");
             //emails.Add("sara@test.com");
             //emails.Add("Sara@Test.Com");
-         
-         
+
+
             //// 3. Print Count
-         
+
             //Console.WriteLine($"Email Count: {emails.Count}");
-         
+
             //Console.WriteLine(
             //    "Ahmed and ahmed are considered the same."
             //);
-         
+
             //Console.WriteLine(
             //    "Sara and sara are considered the same."
             //);
-         
-         
+
+
             //// 4. Create Set A and Set B
-         
+
             //HashSet<int> setA =
             //    new HashSet<int> { 1, 2, 3, 4, 5 };
-         
+
             //HashSet<int> setB =
             //    new HashSet<int> { 4, 5, 6, 7, 8 };
-         
-         
+
+
             //// Union
-         
+
             //HashSet<int> union = new HashSet<int>(setA);
-         
+
             //union.UnionWith(setB);
-         
+
             //Console.WriteLine("\nUnion:");
-         
+
             //foreach (int number in union)
             //{
             //    Console.Write(number + " ");
             //}
-         
-         
+
+
             //// Intersection
-         
+
             //HashSet<int> intersection = new HashSet<int>(setA);
-         
+
             //intersection.IntersectWith(setB);
-         
+
             //Console.WriteLine("\n\nIntersection:");
-         
+
             //foreach (int number in intersection)
             //{
             //    Console.Write(number + " ");
             //}
-         
-         
+
+
             //// Except
-         
+
             //HashSet<int> except = new HashSet<int>(setA);
-         
+
             //except.ExceptWith(setB);
-         
+
             //Console.WriteLine("\n\nExcept:");
-         
+
             //foreach (int number in except)
             //{
             //    Console.Write(number + " ");
             //}
-         
-         
+
+
             //// 6. IsSubsetOf
-         
+
             //HashSet<int> subset =
             //    new HashSet<int> { 1, 2 };
-         
+
             //bool isSubset = subset.IsSubsetOf(setA);
-         
+
             //Console.WriteLine(
             //    $"\n\n{{1, 2}} is subset of Set A: {isSubset}"
             //    );
             //}
+            #endregion
+           
+            #region Exercise05
+
+            //// Create Queue
+
+            //Queue<string> printQueue =
+            //    new Queue<string>();
+
+
+            //// Add documents
+
+            //printQueue.Enqueue("Report.pdf");
+            //printQueue.Enqueue("Invoice.pdf");
+            //printQueue.Enqueue("Letter.docx");
+            //printQueue.Enqueue("Resume.pdf");
+            //printQueue.Enqueue("Photo.jpg");
+
+
+            //// 1. Print queue and Count
+
+            //Console.WriteLine("Queue:");
+
+            //foreach (string document in printQueue)
+            //{
+            //    Console.WriteLine(document);
+            //}
+
+            //Console.WriteLine($"Count: {printQueue.Count}");
+
+
+            //// 2. Peek
+
+            //Console.WriteLine(
+            //    $"\nNext document: {printQueue.Peek()}"
+            //);
+
+
+            //// 3. Process Queue
+
+            //Console.WriteLine("\nProcessing Queue:");
+
+            //while (printQueue.Count > 0)
+            //{
+            //    string document = printQueue.Dequeue();
+
+            //    Console.WriteLine($"Printing: {document}");
+            //}
+
+
+            //// 4. TryDequeue on empty Queue
+
+            //bool success =
+            //    printQueue.TryDequeue(out string result);
+
+            //Console.WriteLine(
+            //    $"\nTryDequeue succeeded: {success}"
+            //);
+
+            //if (!success)
+            //{
+            //    Console.WriteLine("Queue is empty.");
+            //}
+        
+   
             #endregion
 
 }
